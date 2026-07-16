@@ -13,9 +13,8 @@ Frontend contract: [`API.md`](./API.md) · Vapi setup: [`VAPI-SETUP.md`](./VAPI-
 **Story:** A doctor is busy. They speak one request. Agents handle the rest. Staff act. Dashboard proves it.
 
 ### Setup (2 screens)
-1. **Doctor** — `http://localhost:3001/demo` (Vapi mic)
-2. **Ops dashboard** — frontend polling `GET /api/requests` (+ server console for “message sent”)
-
+1. **Ops dashboard** — `http://localhost:3001/dashboard` (polls requests live)
+2. **Doctor voice** — `http://localhost:3001/demo` (Vapi mic)
 ### Script
 1. **Hook** — Hospitals drown in radios and sticky notes. We turn a spoken need into routed, trackable work.
 2. **Voice** — Doctor: *“Urgent — need a bed moved from room 204 to 310.”* Request appears: `triaging` → `open`.
@@ -103,7 +102,7 @@ Build a **separate dashboard** against this API (CORS is open). Poll every **2�
 4. **Staff picker** — `GET /api/staff` or `?role=nurse|doctor|staff`
 5. **Optional create form** — `POST /api/requests` (typed) or link to voice page `/demo`
 
-### Nice-to-have for judges
+### Nice-to-have (if you have time)
 - Color by urgency (`critical` / `high` / `normal` / `low`)
 - Filter chips by status / type
 - Live “just created” highlight when a new id appears after poll
