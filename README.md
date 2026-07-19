@@ -1,3 +1,13 @@
+# 🥈 2nd Place Winner - Cursor Berlin Hackathon 2026
+
+I co-developed this agentic voice-routing platform during the intense 2026 Cursor Hackathon in Berlin, securing 2nd place overall. 
+
+### My Role & Contributions:
+* **System Architecture & Data Modeling**: Structured the core operational data schema used by the SQLite pipeline to log live medical and physical equipment requests.
+* **API Configuration & Account Infrastructure**: Managed backend environment syncs, provisioned Vapi endpoints, and coordinated system settings under intense time constraints.
+* **Product Strategy & Prompt Design**: Designed the operational voice logic to cleanly differentiate between urgency triggers (e.g., triage vs. routine routing).
+
+
 # Hospital System — Voice + Agent Ops Backend
 
 Hackathon backend: **spoken hospital requests** → **Cursor SDK agent orchestration** → **staff notify + accept/decline** → **dashboard**.
